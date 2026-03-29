@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shloak Chemicals India Pvt. Ltd. | Sustainable Recycling Solutions</title>
+  <meta name="description" content="Shloak Chemicals India Pvt. Ltd. — Leading provider of plastic recycling and solvent distillation solutions for a cleaner, greener future.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green-50: #effdf4;
+      --green-100: #d9f7e5;
+      --green-200: #b5edcc;
+      --green-400: #4ade80;
+      --green-500: #22c55e;
+      --green-600: #16a34a;
+      --green-700: #15803d;
+      --green-800: #166534;
+      --green-900: #14532d;
+
+      --blue-50: #eff6ff;
+      --blue-100: #dbeafe;
+      --blue-200: #bfdbfe;
+      --blue-400: #60a5fa;
+      --blue-500: #3b82f6;
+      --blue-600: #2563eb;
+      --blue-700: #1d4ed8;
+      --blue-800: #1e3a5f;
+      --blue-900: #0f172a;
+
+      --teal-500: #14b8a6;
+      --teal-600: #0d9488;
+
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+
+      --white: #ffffff;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+      --shadow-xl: 0 20px 40px -10px rgba(0,0,0,0.1);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 { line-height: 1.2; font-weight: 700; }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.3); }
+      50% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+    }
+
+    .animate { opacity: 0; }
+    .animate.visible { animation-fill-mode: both; }
+    .animate.visible.fade-up { animation: fadeInUp 0.7s ease-out forwards; }
+    .animate.visible.fade-in { animation: fadeIn 0.6s ease-out forwards; }
+    .animate.visible.slide-left { animation: slideInLeft 0.7s ease-out forwards; }
+    .animate.visible.slide-right { animation: slideInRight 0.7s ease-out forwards; }
+    .animate.visible.scale-in { animation: scaleIn 0.6s ease-out forwards; }
+
+    .delay-1 { animation-delay: 0.1s !important; }
+    .delay-2 { animation-delay: 0.2s !important; }
+    .delay-3 { animation-delay: 0.3s !important; }
+    .delay-4 { animation-delay: 0.4s !important; }
+    .delay-5 { animation-delay: 0.5s !important; }
+    .delay-6 { animation-delay: 0.6s !important; }
+    .delay-7 { animation-delay: 0.7s !important; }
+
+    /* ===== Section Helpers ===== */
+    .section { padding: 100px 0; }
+    .section-alt { background: var(--gray-50); }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green-600);
+      margin-bottom: 14px;
+    }
+
+    .section-label i { font-size: 0.7rem; }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--gray-900);
+      margin-bottom: 18px;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--gray-500);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--gray-800);
+      border: 2px solid var(--gray-200);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--green-500);
+      color: var(--green-700);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+
+    .btn-outline-light:hover {
+      background: var(--white);
+      color: var(--green-700);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ===== Navbar ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 10px 0;
+      box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--white);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled .nav-logo { color: var(--gray-900); }
+
+    .nav-logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--green-500), var(--teal-500));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .nav-logo span { font-size: 0.75rem; font-weight: 400; opacity: 0.7; display: block; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+
+    .navbar.scrolled .nav-links a { color: var(--gray-600); }
+    .navbar.scrolled .nav-links a:hover { color: var(--green-700); background: var(--green-50); }
+
+    .nav-cta {
+      padding: 10px 24px !important;
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600)) !important;
+      color: var(--white) !important;
+      border-radius: 50px !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 10px rgba(22,163,74,0.25);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(22,163,74,0.35) !important;
+      background: linear-gradient(135deg, var(--green-700), var(--teal-600)) !important;
+    }
+
+    .navbar.scrolled .nav-cta { color: var(--white) !important; }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled .nav-toggle span { background: var(--gray-800); }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--blue-900) 0%, var(--green-900) 50%, var(--blue-800) 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 80%, rgba(20, 184, 166, 0.1) 0%, transparent 50%);
+    }
+
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .hero-particles .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .hero-particles .particle:nth-child(1) {
+      width: 300px; height: 300px;
+      background: var(--green-500);
+      top: -80px; right: -60px;
+      animation-delay: 0s;
+    }
+
+    .hero-particles .particle:nth-child(2) {
+      width: 200px; height: 200px;
+      background: var(--blue-500);
+      bottom: -40px; left: -40px;
+      animation-delay: 2s;
+    }
+
+    .hero-particles .particle:nth-child(3) {
+      width: 150px; height: 150px;
+      background: var(--teal-500);
+      top: 30%; left: 60%;
+      animation-delay: 4s;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content { max-width: 580px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--green-400);
+      margin-bottom: 28px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-badge i { font-size: 0.7rem; }
+
+    .hero-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(135deg, var(--green-400), var(--teal-500));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 36px;
+      max-width: 480px;
+      line-height: 1.8;
+    }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-graphic {
+      position: relative;
+      width: 420px;
+      height: 420px;
+    }
+
+    .hero-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-circle-1 {
+      inset: 0;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .hero-circle-2 {
+      inset: 40px;
+      border-color: rgba(34, 197, 94, 0.15);
+      animation: float 6s ease-in-out infinite reverse;
+    }
+
+    .hero-circle-3 {
+      inset: 80px;
+      border-color: rgba(20, 184, 166, 0.2);
+      animation: float 7s ease-in-out infinite;
+    }
+
+    .hero-center-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 60px rgba(34, 197, 94, 0.3);
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    .hero-center-icon i {
+      font-size: 3rem;
+      color: var(--white);
+    }
+
+    .hero-orbit-item {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.2rem;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .hero-orbit-item:nth-child(5) { top: 10%; left: 5%; animation-delay: 0s; }
+    .hero-orbit-item:nth-child(6) { top: 5%; right: 10%; animation-delay: 1s; }
+    .hero-orbit-item:nth-child(7) { bottom: 15%; right: 0; animation-delay: 2s; }
+    .hero-orbit-item:nth-child(8) { bottom: 5%; left: 15%; animation-delay: 3s; }
+    .hero-orbit-item:nth-child(9) { top: 45%; right: -5%; animation-delay: 1.5s; }
+    .hero-orbit-item:nth-child(10) { top: 40%; left: -5%; animation-delay: 2.5s; }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .hero-stat-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    .hero-stat-value span { color: var(--green-400); }
+
+    .hero-stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+
+    /* ===== About ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-image-card {
+      background: linear-gradient(135deg, var(--green-100), var(--blue-100));
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-image-card::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: var(--green-200);
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+
+    .about-image-icon {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+    }
+
+    .about-image-icon .icon-main {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--white);
+      box-shadow: 0 15px 40px rgba(22, 163, 74, 0.25);
+    }
+
+    .about-image-icon h3 {
+      font-size: 1.3rem;
+      color: var(--gray-800);
+    }
+
+    .about-image-icon p {
+      color: var(--gray-500);
+      font-size: 0.95rem;
+      max-width: 300px;
+    }
+
+    .about-mini-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .about-mini-card {
+      background: var(--white);
+      padding: 18px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .about-mini-card i {
+      font-size: 1.4rem;
+      color: var(--green-600);
+      margin-bottom: 8px;
+    }
+
+    .about-mini-card p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .about-text .section-label { text-align: left; }
+
+    .about-text h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      color: var(--gray-900);
+      margin-bottom: 20px;
+    }
+
+    .about-text > p {
+      color: var(--gray-500);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+
+    .about-features {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .about-feature-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      background: var(--green-50);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-600);
+      font-size: 1rem;
+    }
+
+    .about-feature h4 {
+      font-size: 0.95rem;
+      color: var(--gray-800);
+      margin-bottom: 2px;
+    }
+
+    .about-feature p {
+      font-size: 0.88rem;
+      color: var(--gray-500);
+    }
+
+    /* ===== Services ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      border: 1px solid var(--gray-100);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .service-card-header {
+      padding: 40px 36px 30px;
+      position: relative;
+    }
+
+    .service-card:nth-child(1) .service-card-header {
+      background: linear-gradient(135deg, var(--green-600), var(--green-800));
+    }
+
+    .service-card:nth-child(2) .service-card-header {
+      background: linear-gradient(135deg, var(--blue-600), var(--blue-800));
+    }
+
+    .service-card-header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background: var(--white);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .service-icon-wrap {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .service-card-header h3 {
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .service-card-header p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.92rem;
+    }
+
+    .service-card-body {
+      padding: 24px 36px 36px;
+    }
+
+    .service-card-body > p {
+      color: var(--gray-500);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    .service-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .service-highlight {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--gray-50);
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+
+    .service-highlight:hover { background: var(--green-50); }
+
+    .service-highlight i {
+      color: var(--green-500);
+      font-size: 0.85rem;
+      min-width: 20px;
+    }
+
+    .service-highlight span {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+
+    /* ===== Sourcing ===== */
+    .sourcing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .source-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .source-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--green-500), var(--teal-500));
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+
+    .source-card:hover::before { transform: scaleX(1); }
+
+    .source-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--green-200);
+    }
+
+    .source-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 18px;
+      background: var(--green-50);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--green-600);
+      transition: var(--transition);
+    }
+
+    .source-card:hover .source-icon {
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      color: var(--white);
+    }
+
+    .source-card h3 {
+      font-size: 1rem;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+
+    .source-card p {
+      font-size: 0.88rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* ===== Process ===== */
+    .process-track {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      position: relative;
+    }
+
+    .process-track::before {
+      content: '';
+      position: absolute;
+      top: 48px;
+      left: 60px;
+      right: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--green-200), var(--teal-500), var(--green-600));
+      border-radius: 3px;
+      z-index: 0;
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process-number {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      background: var(--white);
+      border: 3px solid var(--green-200);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .process-number i {
+      font-size: 1.5rem;
+      color: var(--green-600);
+      transition: var(--transition);
+    }
+
+    .process-number span {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .process-step:hover .process-number {
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      border-color: transparent;
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(22, 163, 74, 0.3);
+    }
+
+    .process-step:hover .process-number i,
+    .process-step:hover .process-number span {
+      color: var(--white);
+    }
+
+    .process-step h4 {
+      font-size: 0.92rem;
+      color: var(--gray-800);
+      margin-bottom: 6px;
+    }
+
+    .process-step p {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      max-width: 140px;
+      margin: 0 auto;
+    }
+
+    /* ===== Why Choose Us ===== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-100);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .why-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .why-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 18px;
+      background: linear-gradient(135deg, var(--green-50), var(--blue-50));
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--green-600);
+      transition: var(--transition);
+    }
+
+    .why-card:hover .why-icon {
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      color: var(--white);
+    }
+
+    .why-card h3 {
+      font-size: 1rem;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      font-size: 0.88rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* ===== Contact ===== */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-100);
+    }
+
+    .contact-info {
+      background: linear-gradient(135deg, var(--green-800), var(--blue-900));
+      padding: 48px 40px;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-info > p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-item-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .contact-item h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-item p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .contact-socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .contact-socials a {
+      width: 42px;
+      height: 42px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--white);
+      transition: var(--transition);
+    }
+
+    .contact-socials a:hover {
+      background: var(--green-500);
+      transform: translateY(-2px);
+    }
+
+    .contact-form-wrap {
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-form-wrap h3 {
+      font-size: 1.4rem;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrap > p {
+      color: var(--gray-500);
+      font-size: 0.92rem;
+      margin-bottom: 28px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 13px 16px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--gray-800);
+      transition: var(--transition);
+      background: var(--gray-50);
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--green-500);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-submit {
+      margin-top: 20px;
+    }
+
+    .form-submit .btn { width: 100%; justify-content: center; }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: var(--gray-900);
+      color: rgba(255,255,255,0.7);
+      padding: 80px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 48px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand .nav-logo {
+      margin-bottom: 18px;
+    }
+
+    .footer-brand > p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul { display: flex; flex-direction: column; gap: 12px; }
+
+    .footer-col ul li a {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--green-400);
+      padding-left: 4px;
+    }
+
+    .footer-newsletter p {
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: var(--white);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.35); }
+    .newsletter-form input:focus { border-color: var(--green-500); }
+
+    .newsletter-form button {
+      padding: 12px 20px;
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      border: none;
+      border-radius: 10px;
+      color: var(--white);
+      font-family: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-form button:hover { opacity: 0.9; }
+
+    .footer-bottom {
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-bottom-links a {
+      color: rgba(255,255,255,0.4);
+      transition: var(--transition);
+    }
+
+    .footer-bottom-links a:hover { color: var(--green-400); }
+
+    /* ===== Back to Top ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--green-600), var(--teal-600));
+      border: none;
+      border-radius: 14px;
+      color: var(--white);
+      font-size: 1.1rem;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { display: none; }
+      .hero-content { max-width: 100%; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-track { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+      .process-track::before { display: none; }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 70px 0; }
+      .section-header { margin-bottom: 40px; }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+        transition: var(--transition);
+        gap: 4px;
+        align-items: stretch;
+      }
+
+      .nav-links.open { right: 0; }
+
+      .nav-links a {
+        color: var(--gray-700) !important;
+        padding: 12px 16px !important;
+        font-size: 1rem !important;
+      }
+
+      .nav-links a:hover {
+        background: var(--green-50) !important;
+        color: var(--green-700) !important;
+      }
+
+      .nav-cta {
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .nav-toggle { display: flex; }
+
+      .hero-stats { gap: 24px; flex-wrap: wrap; }
+      .hero-stat-value { font-size: 1.4rem; }
+
+      .sourcing-grid { grid-template-columns: 1fr 1fr; }
+      .process-track { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .sourcing-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .process-track { grid-template-columns: 1fr 1fr; }
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { justify-content: center; }
+      .contact-info { padding: 36px 24px; }
+      .contact-form-wrap { padding: 36px 24px; }
+    }
+
+    /* ===== Mobile overlay ===== */
+    .nav-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .nav-overlay.open { opacity: 1; visibility: visible; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-recycle"></i></div>
+        <div>Shloak Chemicals<span>India Pvt. Ltd.</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#sourcing">Sourcing</a>
+        <a href="#process">Process</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge animate fade-up">
+            <i class="fas fa-leaf"></i> Eco-Friendly Industrial Solutions
+          </div>
+          <h1 class="hero-title animate fade-up delay-1">
+            Sustainable Recycling Solutions for a <span class="highlight">Cleaner Future</span>
+          </h1>
+          <p class="hero-desc animate fade-up delay-2">
+            Pioneering plastic recycling and solvent distillation processes that transform industrial waste into valuable resources — reducing environmental impact while driving economic value.
+          </p>
+          <div class="hero-buttons animate fade-up delay-3">
+            <a href="#services" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i> Our Services
+            </a>
+            <a href="#contact" class="btn btn-outline-light">
+              <i class="fas fa-envelope"></i> Contact Us
+            </a>
+          </div>
+          <div class="hero-stats animate fade-up delay-4">
+            <div>
+              <div class="hero-stat-value">500<span>+</span></div>
+              <div class="hero-stat-label">Tonnes Recycled Monthly</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">98<span>%</span></div>
+              <div class="hero-stat-label">Material Recovery Rate</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">50<span>+</span></div>
+              <div class="hero-stat-label">Industry Clients</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual animate scale-in delay-3">
+          <div class="hero-graphic">
+            <div class="hero-circle hero-circle-1"></div>
+            <div class="hero-circle hero-circle-2"></div>
+            <div class="hero-circle hero-circle-3"></div>
+            <div class="hero-center-icon"><i class="fas fa-recycle"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-box"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-flask"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-truck"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-industry"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-cogs"></i></div>
+            <div class="hero-orbit-item"><i class="fas fa-leaf"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual animate slide-left">
+          <div class="about-image-card">
+            <div class="about-image-icon">
+              <div class="icon-main"><i class="fas fa-seedling"></i></div>
+              <h3>Committed to Sustainability</h3>
+              <p>Transforming waste into opportunity since our inception</p>
+            </div>
+            <div class="about-mini-cards">
+              <div class="about-mini-card">
+                <i class="fas fa-recycle"></i>
+                <p>Plastic Recycling</p>
+              </div>
+              <div class="about-mini-card">
+                <i class="fas fa-flask"></i>
+                <p>Solvent Recovery</p>
+              </div>
+              <div class="about-mini-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <p>Zero Waste Goal</p>
+              </div>
+              <div class="about-mini-card">
+                <i class="fas fa-certificate"></i>
+                <p>Quality Certified</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text animate slide-right">
+          <div class="section-label"><i class="fas fa-circle"></i> About Us</div>
+          <h2>Redefining Industrial Recycling with Innovation & Purpose</h2>
+          <p>
+            <strong>Shloak Chemicals India Pvt. Ltd.</strong> is a leading industrial recycling company dedicated to transforming plastic waste and chemical solvents into reusable, high-quality materials.
+          </p>
+          <p>
+            With state-of-the-art facilities and a passionate team, we bridge the gap between waste generation and sustainable reuse — helping industries reduce their environmental footprint while optimizing operational costs.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-bolt"></i></div>
+              <div>
+                <h4>Innovation-Driven Processes</h4>
+                <p>Leveraging modern technology for maximum material recovery</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h4>Environmentally Compliant</h4>
+                <p>Adhering to all environmental regulations and standards</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-handshake"></i></div>
+              <div>
+                <h4>Trusted Partnerships</h4>
+                <p>Long-term relationships with leading industrial clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label animate fade-up"><i class="fas fa-circle"></i> Our Services</div>
+        <h2 class="section-title animate fade-up delay-1">Comprehensive Recycling &amp; Recovery Solutions</h2>
+        <p class="section-subtitle animate fade-up delay-2">Two core service verticals designed to maximize waste recovery, minimize environmental impact, and deliver value to our partners.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Plastic Recycling -->
+        <div class="service-card animate fade-up delay-2">
+          <div class="service-card-header">
+            <div class="service-icon-wrap"><i class="fas fa-recycle"></i></div>
+            <h3>Plastic Recycling</h3>
+            <p>Transforming plastic waste into premium recycled granules</p>
+          </div>
+          <div class="service-card-body">
+            <p>
+              Our advanced plastic recycling facility processes a wide range of plastic waste — from industrial scrap to post-consumer materials — converting them into high-quality recycled plastic granules ready for reuse in manufacturing.
+            </p>
+            <div class="service-highlights">
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Premium Recycled Plastic Granules (HDPE, LDPE, PP)</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Consistent quality with rigorous testing standards</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Reduces virgin plastic dependency by up to 80%</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Environmentally responsible waste diversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Solvent Distillation -->
+        <div class="service-card animate fade-up delay-3">
+          <div class="service-card-header">
+            <div class="service-icon-wrap"><i class="fas fa-flask"></i></div>
+            <h3>Solvent Distillation</h3>
+            <p>Recovering and purifying industrial solvents for reuse</p>
+          </div>
+          <div class="service-card-body">
+            <p>
+              Our solvent distillation process recovers and purifies used industrial solvents — including thinners, acetone, and toluene — restoring them to near-original quality for cost-effective and eco-friendly reuse.
+            </p>
+            <div class="service-highlights">
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Up to 95% solvent recovery rate</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Significant cost savings over purchasing virgin solvents</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Reduced hazardous waste and emissions</span>
+              </div>
+              <div class="service-highlight">
+                <i class="fas fa-check-circle"></i>
+                <span>Compliant with all environmental safety regulations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sourcing -->
+  <section class="section" id="sourcing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label animate fade-up"><i class="fas fa-circle"></i> Our Sources</div>
+        <h2 class="section-title animate fade-up delay-1">Where We Source Our Plastic From</h2>
+        <p class="section-subtitle animate fade-up delay-2">We partner with diverse industries and networks to ensure a consistent, high-volume supply of recyclable plastic materials.</p>
+      </div>
+      <div class="sourcing-grid">
+        <div class="source-card animate fade-up delay-1">
+          <div class="source-icon"><i class="fas fa-industry"></i></div>
+          <h3>Industrial Manufacturing Units</h3>
+          <p>Collecting production offcuts, rejects, and scrap from large-scale manufacturing facilities across India.</p>
+        </div>
+        <div class="source-card animate fade-up delay-2">
+          <div class="source-icon"><i class="fas fa-box-open"></i></div>
+          <h3>Packaging Companies</h3>
+          <p>Sourcing waste films, wraps, containers, and packaging materials from the packaging industry.</p>
+        </div>
+        <div class="source-card animate fade-up delay-3">
+          <div class="source-icon"><i class="fas fa-warehouse"></i></div>
+          <h3>Warehouses &amp; Logistics</h3>
+          <p>Recovering stretch wraps, pallets, and protective plastics from warehousing and logistics operations.</p>
+        </div>
+        <div class="source-card animate fade-up delay-4">
+          <div class="source-icon"><i class="fas fa-dumpster"></i></div>
+          <h3>Scrap Dealers &amp; Aggregators</h3>
+          <p>Partnering with scrap networks to collect and consolidate diverse plastic waste streams.</p>
+        </div>
+        <div class="source-card animate fade-up delay-5">
+          <div class="source-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>FMCG Companies</h3>
+          <p>Processing post-consumer and production waste from fast-moving consumer goods manufacturers.</p>
+        </div>
+        <div class="source-card animate fade-up delay-6">
+          <div class="source-icon"><i class="fas fa-car"></i></div>
+          <h3>Automotive Industry</h3>
+          <p>Recycling bumpers, dashboards, and plastic components from automotive manufacturing and end-of-life vehicles.</p>
+        </div>
+        <div class="source-card animate fade-up delay-7">
+          <div class="source-icon"><i class="fas fa-people-carry-box"></i></div>
+          <h3>Local Collection Networks</h3>
+          <p>Working with community collectors and municipal bodies for grassroots-level waste aggregation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label animate fade-up"><i class="fas fa-circle"></i> Our Process</div>
+        <h2 class="section-title animate fade-up delay-1">From Waste to Value — Our Recycling Journey</h2>
+        <p class="section-subtitle animate fade-up delay-2">A streamlined six-step process that ensures maximum material recovery with minimal environmental impact.</p>
+      </div>
+      <div class="process-track animate fade-up delay-3">
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-truck-pickup"></i>
+            <span>Step 1</span>
+          </div>
+          <h4>Collection</h4>
+          <p>Sourcing plastic waste from our partner network</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-layer-group"></i>
+            <span>Step 2</span>
+          </div>
+          <h4>Sorting</h4>
+          <p>Categorizing by type, grade, and color</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-shower"></i>
+            <span>Step 3</span>
+          </div>
+          <h4>Cleaning</h4>
+          <p>Removing contaminants and impurities</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-cogs"></i>
+            <span>Step 4</span>
+          </div>
+          <h4>Processing</h4>
+          <p>Shredding, melting, and extruding material</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-cubes"></i>
+            <span>Step 5</span>
+          </div>
+          <h4>Granule Production</h4>
+          <p>Creating uniform recycled plastic granules</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">
+            <i class="fas fa-sync-alt"></i>
+            <span>Step 6</span>
+          </div>
+          <h4>Reuse</h4>
+          <p>Supplying granules for new product manufacturing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label animate fade-up"><i class="fas fa-circle"></i> Why Choose Us</div>
+        <h2 class="section-title animate fade-up delay-1">The Shloak Chemicals Advantage</h2>
+        <p class="section-subtitle animate fade-up delay-2">We combine deep industry expertise with sustainable practices to deliver unmatched value to our clients.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card animate fade-up delay-1">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Eco-Friendly Processes</h3>
+          <p>Every step of our operation is designed to minimize carbon footprint and environmental impact.</p>
+        </div>
+        <div class="why-card animate fade-up delay-2">
+          <div class="why-icon"><i class="fas fa-gem"></i></div>
+          <h3>High-Quality Output</h3>
+          <p>Rigorous quality control ensures our recycled materials meet the highest industry standards.</p>
+        </div>
+        <div class="why-card animate fade-up delay-3">
+          <div class="why-icon"><i class="fas fa-coins"></i></div>
+          <h3>Cost Efficiency</h3>
+          <p>Our recycled materials offer significant cost savings compared to virgin alternatives.</p>
+        </div>
+        <div class="why-card animate fade-up delay-4">
+          <div class="why-icon"><i class="fas fa-link"></i></div>
+          <h3>Reliable Supply Chain</h3>
+          <p>Consistent, on-time delivery backed by a robust sourcing and logistics network.</p>
+        </div>
+        <div class="why-card animate fade-up delay-5">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h3>Industry Expertise</h3>
+          <p>Decades of combined experience in plastic recycling and chemical recovery processes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label animate fade-up"><i class="fas fa-circle"></i> Get In Touch</div>
+        <h2 class="section-title animate fade-up delay-1">Let's Build a Greener Future Together</h2>
+        <p class="section-subtitle animate fade-up delay-2">Have a question or want to partner with us? Reach out and our team will get back to you promptly.</p>
+      </div>
+      <div class="contact-wrapper animate fade-up delay-3">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Fill out the form and our team will get back to you within 24 hours.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Address</h4>
+                <p>Industrial Area, Phase II,<br>New Delhi, India - 110020</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>info@shloakchemicals.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send us a message</h3>
+          <p>We'd love to hear from you. Fill out the form below.</p>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?">
+              </div>
+              <div class="form-group full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your requirements..." required></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <div class="nav-logo-icon"><i class="fas fa-recycle"></i></div>
+            <div>Shloak Chemicals<span>India Pvt. Ltd.</span></div>
+          </a>
+          <p>Leading the charge in sustainable plastic recycling and solvent distillation. Transforming industrial waste into valuable resources for a cleaner tomorrow.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#sourcing">Sourcing</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Plastic Recycling</a></li>
+            <li><a href="#services">Recycled Granules</a></li>
+            <li><a href="#services">Solvent Distillation</a></li>
+            <li><a href="#services">Solvent Recovery</a></li>
+            <li><a href="#services">Waste Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for the latest in sustainable recycling.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value = ''; alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shloak Chemicals India Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY > 60;
+      navbar.classList.toggle('scrolled', scrolled);
+      backToTop.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function closeNav() {
+      navLinks.classList.remove('open');
+      navOverlay.classList.remove('open');
+    }
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navOverlay.classList.toggle('open');
+    });
+
+    navOverlay.addEventListener('click', closeNav);
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+
+    // Back to top
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Scroll-triggered animations
+    const animateEls = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    animateEls.forEach(el => observer.observe(el));
+
+    // Contact form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalHTML = btn.innerHTML;
+
+      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #16a34a, #0d9488)';
+
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        form.reset();
+      }, 2500);
+    }
+  </script>
+
+</body>
+</html>
