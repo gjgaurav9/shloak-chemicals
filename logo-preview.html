@@ -195,66 +195,70 @@
     <div class="option">
       <div class="option-head">
         <span class="option-letter">A.</span>
-        <span class="option-title">Molecular Monogram <span style="font-size:0.85rem;color:#64748b;font-weight:500;">— merged A + C</span></span>
+        <span class="option-title">Refined Molecular Monogram <span style="font-size:0.85rem;color:#64748b;font-weight:500;">— sober palette</span></span>
         <span class="option-tag">Industrial + Chemistry</span>
       </div>
       <p class="option-desc">
-        The molecular hex ring from C (6 bonded atoms = chemistry) framing an <strong>angular S monogram</strong> at the center (the brand). Says <em>chemistry company</em> and <em>Shloak</em> in one mark. The atoms read as both molecular structure and recycling-loop vertices.
+        Deep forest-green hexagon (solid, not gradient — the shape alone signals chemistry). A subtle molecular ring sits in the background at low opacity, with a clean <strong>angular S monogram</strong> as the focal point. Less saturated, more whitespace, more confident.
       </p>
       <div class="demos">
-        <div class="demo-card">
+        <div class="demo-card" style="background:#f8fafc;">
           <svg class="demo-large" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <!-- Hex container with deep, sober color (subtle gradient between two dark greens) -->
             <defs>
               <linearGradient id="mergedA-lg" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#22c55e"/>
-                <stop offset="100%" stop-color="#0d9488"/>
+                <stop offset="0%" stop-color="#15803d"/>
+                <stop offset="100%" stop-color="#134e4a"/>
               </linearGradient>
             </defs>
-            <rect x="4" y="4" width="72" height="72" rx="16" fill="url(#mergedA-lg)"/>
-            <!-- Molecular hex ring (slightly subdued to frame the S) -->
-            <g stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85">
-              <line x1="40" y1="14" x2="58" y2="25"/>
-              <line x1="58" y1="25" x2="58" y2="51"/>
-              <line x1="58" y1="51" x2="40" y2="62"/>
-              <line x1="40" y1="62" x2="22" y2="51"/>
-              <line x1="22" y1="51" x2="22" y2="25"/>
-              <line x1="22" y1="25" x2="40" y2="14"/>
+            <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="url(#mergedA-lg)"/>
+            <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+            <!-- Subtle molecular hex ring (background, low opacity) -->
+            <g stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.32">
+              <line x1="40" y1="20" x2="55" y2="29"/>
+              <line x1="55" y1="29" x2="55" y2="47"/>
+              <line x1="55" y1="47" x2="40" y2="56"/>
+              <line x1="40" y1="56" x2="25" y2="47"/>
+              <line x1="25" y1="47" x2="25" y2="29"/>
+              <line x1="25" y1="29" x2="40" y2="20"/>
             </g>
-            <g fill="white" opacity="0.95">
-              <circle cx="40" cy="14" r="4"/>
-              <circle cx="58" cy="25" r="4"/>
-              <circle cx="58" cy="51" r="4"/>
-              <circle cx="40" cy="62" r="4"/>
-              <circle cx="22" cy="51" r="4"/>
-              <circle cx="22" cy="25" r="4"/>
+            <g fill="white" opacity="0.5">
+              <circle cx="40" cy="20" r="2"/>
+              <circle cx="55" cy="29" r="2"/>
+              <circle cx="55" cy="47" r="2"/>
+              <circle cx="40" cy="56" r="2"/>
+              <circle cx="25" cy="47" r="2"/>
+              <circle cx="25" cy="29" r="2"/>
             </g>
-            <!-- Angular S monogram, centered -->
-            <path d="M 50 25 L 32 25 L 28 29 L 28 33 L 32 37 L 48 37 L 52 41 L 52 47 L 48 51 L 30 51"
-                  stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+            <!-- Angular S — the focal element -->
+            <path d="M 50 27 L 33 27 L 30 30 L 30 34 L 33 37 L 47 37 L 50 40 L 50 47 L 47 50 L 31 50"
+                  stroke="#f8fafc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
           </svg>
           <div class="label">Showcase 96px</div>
         </div>
         <div class="nav-mock">
-          <div class="icon-box">
+          <div class="icon-box" style="background:linear-gradient(135deg,#15803d,#134e4a);box-shadow:0 6px 18px rgba(19,78,74,0.5);border-radius:0;clip-path:polygon(50% 5%, 89% 27%, 89% 73%, 50% 95%, 11% 73%, 11% 27%);">
             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-              <g stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85">
-                <line x1="40" y1="14" x2="58" y2="25"/>
-                <line x1="58" y1="25" x2="58" y2="51"/>
-                <line x1="58" y1="51" x2="40" y2="62"/>
-                <line x1="40" y1="62" x2="22" y2="51"/>
-                <line x1="22" y1="51" x2="22" y2="25"/>
-                <line x1="22" y1="25" x2="40" y2="14"/>
+              <g stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.32">
+                <line x1="40" y1="20" x2="55" y2="29"/>
+                <line x1="55" y1="29" x2="55" y2="47"/>
+                <line x1="55" y1="47" x2="40" y2="56"/>
+                <line x1="40" y1="56" x2="25" y2="47"/>
+                <line x1="25" y1="47" x2="25" y2="29"/>
+                <line x1="25" y1="29" x2="40" y2="20"/>
               </g>
-              <g fill="white" opacity="0.95">
-                <circle cx="40" cy="14" r="4"/>
-                <circle cx="58" cy="25" r="4"/>
-                <circle cx="58" cy="51" r="4"/>
-                <circle cx="40" cy="62" r="4"/>
-                <circle cx="22" cy="51" r="4"/>
-                <circle cx="22" cy="25" r="4"/>
+              <g fill="white" opacity="0.5">
+                <circle cx="40" cy="20" r="2"/>
+                <circle cx="55" cy="29" r="2"/>
+                <circle cx="55" cy="47" r="2"/>
+                <circle cx="40" cy="56" r="2"/>
+                <circle cx="25" cy="47" r="2"/>
+                <circle cx="25" cy="29" r="2"/>
               </g>
-              <path d="M 50 25 L 32 25 L 28 29 L 28 33 L 32 37 L 48 37 L 52 41 L 52 47 L 48 51 L 30 51"
-                    stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <path d="M 50 27 L 33 27 L 30 30 L 30 34 L 33 37 L 47 37 L 50 40 L 50 47 L 47 50 L 31 50"
+                    stroke="#f8fafc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
             </svg>
           </div>
           <div class="name">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
@@ -265,29 +269,13 @@
             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="mergedA-fav" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#22c55e"/>
-                  <stop offset="100%" stop-color="#0d9488"/>
+                  <stop offset="0%" stop-color="#15803d"/>
+                  <stop offset="100%" stop-color="#134e4a"/>
                 </linearGradient>
               </defs>
-              <rect x="4" y="4" width="72" height="72" rx="16" fill="url(#mergedA-fav)"/>
-              <g stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none">
-                <line x1="40" y1="14" x2="58" y2="25"/>
-                <line x1="58" y1="25" x2="58" y2="51"/>
-                <line x1="58" y1="51" x2="40" y2="62"/>
-                <line x1="40" y1="62" x2="22" y2="51"/>
-                <line x1="22" y1="51" x2="22" y2="25"/>
-                <line x1="22" y1="25" x2="40" y2="14"/>
-              </g>
-              <g fill="white">
-                <circle cx="40" cy="14" r="5"/>
-                <circle cx="58" cy="25" r="5"/>
-                <circle cx="58" cy="51" r="5"/>
-                <circle cx="40" cy="62" r="5"/>
-                <circle cx="22" cy="51" r="5"/>
-                <circle cx="22" cy="25" r="5"/>
-              </g>
-              <path d="M 50 25 L 32 25 L 28 29 L 28 33 L 32 37 L 48 37 L 52 41 L 52 47 L 48 51 L 30 51"
-                    stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="url(#mergedA-fav)"/>
+              <path d="M 50 27 L 33 27 L 30 30 L 30 34 L 33 37 L 47 37 L 50 40 L 50 47 L 47 50 L 31 50"
+                    stroke="#f8fafc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
             </svg>
             <span>Shloak</span>
           </div>
