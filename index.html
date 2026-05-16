@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shloak Chemicals India Pvt. Ltd. | Sustainable Recycling Solutions</title>
   <meta name="description" content="Shloak Chemicals India Pvt. Ltd. — Leading provider of plastic recycling and solvent distillation solutions for a cleaner, greener future.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2316a34a'/%3E%3Cpath d='M20 13 C24.5 17 24.5 22 20 26 C15.5 22 15.5 17 20 13 Z' fill='white'/%3E%3Cpath d='M20 14.5 L20 24.5' stroke='%2316a34a' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,4 89,27 89,73 50,96 11,73 11,27' fill='%2315803d'/%3E%3Ctext x='50' y='74' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='64' fill='white'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -264,26 +264,15 @@
     .navbar.scrolled .nav-logo { color: var(--gray-900); }
 
     .nav-logo-icon {
-      width: 46px;
-      height: 46px;
-      background: linear-gradient(135deg, var(--green-500) 0%, var(--teal-600) 100%);
-      border-radius: 12px;
+      width: 48px;
+      height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--white);
       flex-shrink: 0;
-      box-shadow: 0 6px 18px rgba(20, 184, 166, 0.35), inset 0 -2px 4px rgba(0,0,0,0.08);
-      position: relative;
-      overflow: hidden;
+      filter: drop-shadow(0 4px 10px rgba(21, 128, 61, 0.35));
     }
-    .nav-logo-icon::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(circle at 25% 20%, rgba(255,255,255,0.35), transparent 55%);
-      pointer-events: none;
-    }
-    .nav-logo-icon svg { width: 28px; height: 28px; position: relative; z-index: 1; }
+    .nav-logo-icon svg { width: 100%; height: 100%; }
 
     .nav-logo-text {
       display: flex;
@@ -1641,18 +1630,17 @@
     <div class="container">
       <a href="#hero" class="nav-logo">
         <div class="nav-logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Recycling ring -->
-            <path d="M20 5 A15 15 0 0 1 33.66 13.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-            <path d="M33.66 26.5 A15 15 0 0 1 20 35" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-            <path d="M6.34 26.5 A15 15 0 0 1 6.34 13.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-            <!-- Arrow tips -->
-            <path d="M32 11 L34.5 14 L31 15" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <path d="M22 36 L19 34.5 L21.5 31.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <path d="M6 13 L7.5 10 L10 12.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <!-- Center leaf-drop -->
-            <path d="M20 13 C24.5 17 24.5 22 20 26 C15.5 22 15.5 17 20 13 Z" fill="white" opacity="0.95"/>
-            <path d="M20 14.5 L20 24.5" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round"/>
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,4 89,27 89,73 50,96 11,73 11,27" fill="#15803d"/>
+            <g transform="translate(50 50)" fill="white">
+              <path d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+              <path transform="rotate(120)" d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+              <path transform="rotate(240)" d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+            </g>
+            <text x="50" y="62" text-anchor="middle"
+                  font-family="'Inter', 'Helvetica Neue', 'Arial Black', sans-serif"
+                  font-weight="900" font-size="30" fill="white"
+                  letter-spacing="-0.5">S</text>
           </svg>
         </div>
         <div class="nav-logo-text">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
@@ -2431,15 +2419,17 @@
         <div class="footer-brand">
           <a href="#hero" class="nav-logo">
             <div class="nav-logo-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 5 A15 15 0 0 1 33.66 13.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-                <path d="M33.66 26.5 A15 15 0 0 1 20 35" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-                <path d="M6.34 26.5 A15 15 0 0 1 6.34 13.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-                <path d="M32 11 L34.5 14 L31 15" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                <path d="M22 36 L19 34.5 L21.5 31.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                <path d="M6 13 L7.5 10 L10 12.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                <path d="M20 13 C24.5 17 24.5 22 20 26 C15.5 22 15.5 17 20 13 Z" fill="white" opacity="0.95"/>
-                <path d="M20 14.5 L20 24.5" stroke="#16a34a" stroke-width="1.2" stroke-linecap="round"/>
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,4 89,27 89,73 50,96 11,73 11,27" fill="#15803d"/>
+                <g transform="translate(50 50)" fill="white">
+                  <path d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+                  <path transform="rotate(120)" d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+                  <path transform="rotate(240)" d="M 0 -32 A 32 32 0 0 1 30 -10 L 36 -8 L 32 8 L 19 -1 L 22 -7 A 22 22 0 0 0 0 -22 Z"/>
+                </g>
+                <text x="50" y="62" text-anchor="middle"
+                      font-family="'Inter', 'Helvetica Neue', 'Arial Black', sans-serif"
+                      font-weight="900" font-size="30" fill="white"
+                      letter-spacing="-0.5">S</text>
               </svg>
             </div>
             <div class="nav-logo-text">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
