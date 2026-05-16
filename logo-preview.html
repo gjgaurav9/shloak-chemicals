@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Preview — Shloak Chemicals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 48px 24px;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+    .lede { color: #64748b; margin-bottom: 48px; font-size: 1.05rem; }
+
+    .option {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 36px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .option-head {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .option-letter {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #16a34a;
+    }
+    .option-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .option-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #15803d;
+      background: #d9f7e5;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .option-desc {
+      color: #475569;
+      margin-bottom: 28px;
+      max-width: 720px;
+    }
+
+    .demos {
+      display: grid;
+      grid-template-columns: 200px 1fr 80px;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .demo-card {
+      background: linear-gradient(135deg, #f1f5f9, #ffffff);
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+    .demo-card .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+    .demo-large { width: 96px; height: 96px; margin: 0 auto; }
+
+    /* Nav mockup */
+    .nav-mock {
+      background: #0f172a;
+      border-radius: 16px;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+    }
+    .nav-mock .icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, #22c55e, #0d9488);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 18px rgba(20, 184, 166, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .nav-mock .icon-box::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 25% 20%, rgba(255,255,255,0.35), transparent 55%);
+    }
+    .nav-mock .icon-box svg { width: 28px; height: 28px; position: relative; z-index: 1; }
+    .nav-mock .name {
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+    .nav-mock .name span {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      opacity: 0.65;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 2px;
+    }
+    .nav-mock-fade {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 14px;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+
+    /* Favicon mockup */
+    .favicon-mock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .favicon-mock .tab {
+      width: 70px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px 8px 4px 4px;
+      padding: 6px 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.6rem;
+      color: #64748b;
+    }
+    .favicon-mock .tab svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    .current-note {
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      color: #78350f;
+      font-size: 0.95rem;
+    }
+
+    .pick {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: #475569;
+      font-weight: 500;
+    }
+
+    @media (max-width: 720px) {
+      .demos { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Logo Direction Preview</h1>
+    <p class="lede">Three concepts rendered at the sizes that actually matter. Pick the one you want and I'll wire it into the live site.</p>
+
+    <div class="current-note">
+      <strong>Current logo for comparison:</strong> the existing recycling-ring + leaf-drop combination is shown in your live nav at <a href="/" style="color:#92400e;">www.shloakchemicals.com</a>.
+    </div>
+
+    <!-- ===================== OPTION A ===================== -->
+    <div class="option">
+      <div class="option-head">
+        <span class="option-letter">A.</span>
+        <span class="option-title">Hexagonal Monogram</span>
+        <span class="option-tag">Industrial</span>
+      </div>
+      <p class="option-desc">
+        A bold hexagon — instantly reads as <em>chemistry / benzene ring / polymer unit</em> — wrapping a custom <strong>S</strong> letterform whose curves end in arrow tips, suggesting recycling motion. Most distinctive, scales cleanly to favicon size, and feels weighty like industrial brands (Dow, BASF, Reliance).
+      </p>
+      <div class="demos">
+        <div class="demo-card">
+          <svg class="demo-large" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hexA-lg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#22c55e"/>
+                <stop offset="100%" stop-color="#0d9488"/>
+              </linearGradient>
+            </defs>
+            <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="url(#hexA-lg)"/>
+            <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <!-- Custom S with arrow caps -->
+            <path d="M 54 26 Q 54 20 46 20 L 32 20 Q 24 20 24 28 Q 24 36 32 36 L 48 36 Q 56 36 56 44 Q 56 52 48 52 L 32 52"
+                  stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <!-- Top arrow tip -->
+            <path d="M 54 26 L 58 22 M 54 26 L 58 30" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <!-- Bottom arrow tip -->
+            <path d="M 32 52 L 28 48 M 32 52 L 28 56" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="label">Showcase 96px</div>
+        </div>
+        <div class="nav-mock">
+          <div class="icon-box">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 54 26 Q 54 20 46 20 L 32 20 Q 24 20 24 28 Q 24 36 32 36 L 48 36 Q 56 36 56 44 Q 56 52 48 52 L 32 52"
+                    stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M 54 26 L 58 22 M 54 26 L 58 30" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M 32 52 L 28 48 M 32 52 L 28 56" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <div class="name">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
+          <div class="nav-mock-fade"><span>About</span><span>Services</span><span>Products</span><span>Contact</span></div>
+        </div>
+        <div class="favicon-mock">
+          <div class="tab">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hexA-fav" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#22c55e"/>
+                  <stop offset="100%" stop-color="#0d9488"/>
+                </linearGradient>
+              </defs>
+              <polygon points="40,4 71,22 71,58 40,76 9,58 9,22" fill="url(#hexA-fav)"/>
+              <path d="M 54 26 Q 54 20 46 20 L 32 20 Q 24 20 24 28 Q 24 36 32 36 L 48 36 Q 56 36 56 44 Q 56 52 48 52 L 32 52"
+                    stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span>Shloak</span>
+          </div>
+          <div class="label" style="font-size:0.55rem;">Favicon</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== OPTION B ===================== -->
+    <div class="option">
+      <div class="option-head">
+        <span class="option-letter">B.</span>
+        <span class="option-title">Liquid Recycling Triad</span>
+        <span class="option-tag">Storytelling</span>
+      </div>
+      <p class="option-desc">
+        Three teardrop shapes arranged in a triangular flow — each drop's tail curves toward the next, making the classic recycling-triangle motion using <em>liquid forms</em>. Reads simultaneously as "recycling" and "solvents". Most literal storytelling for what you actually do.
+      </p>
+      <div class="demos">
+        <div class="demo-card">
+          <svg class="demo-large" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="dropA" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#4ade80"/><stop offset="100%" stop-color="#16a34a"/>
+              </linearGradient>
+              <linearGradient id="dropB" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#5eead4"/><stop offset="100%" stop-color="#0d9488"/>
+              </linearGradient>
+              <linearGradient id="dropC" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#15803d"/>
+              </linearGradient>
+            </defs>
+            <!-- Top drop pointing right -->
+            <g transform="translate(40 40) rotate(60)">
+              <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="url(#dropA)"/>
+            </g>
+            <!-- Bottom-right drop -->
+            <g transform="translate(40 40) rotate(180)">
+              <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="url(#dropB)"/>
+            </g>
+            <!-- Bottom-left drop -->
+            <g transform="translate(40 40) rotate(300)">
+              <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="url(#dropC)"/>
+            </g>
+            <!-- Central highlight -->
+            <circle cx="40" cy="40" r="3" fill="#ffffff" opacity="0.85"/>
+          </svg>
+          <div class="label">Showcase 96px</div>
+        </div>
+        <div class="nav-mock">
+          <div class="icon-box" style="background:white;box-shadow:0 6px 18px rgba(0,0,0,0.15);">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(40 40) rotate(60)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#16a34a"/>
+              </g>
+              <g transform="translate(40 40) rotate(180)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#0d9488"/>
+              </g>
+              <g transform="translate(40 40) rotate(300)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#15803d"/>
+              </g>
+            </svg>
+          </div>
+          <div class="name">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
+          <div class="nav-mock-fade"><span>About</span><span>Services</span><span>Products</span><span>Contact</span></div>
+        </div>
+        <div class="favicon-mock">
+          <div class="tab">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(40 40) rotate(60)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#16a34a"/>
+              </g>
+              <g transform="translate(40 40) rotate(180)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#0d9488"/>
+              </g>
+              <g transform="translate(40 40) rotate(300)">
+                <path d="M 0 -28 C 12 -16 12 -2 0 6 C -10 -2 -10 -16 0 -28 Z" fill="#15803d"/>
+              </g>
+            </svg>
+            <span>Shloak</span>
+          </div>
+          <div class="label" style="font-size:0.55rem;">Favicon</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== OPTION C ===================== -->
+    <div class="option">
+      <div class="option-head">
+        <span class="option-letter">C.</span>
+        <span class="option-title">Polymer Loop</span>
+        <span class="option-tag">Chemistry</span>
+      </div>
+      <p class="option-desc">
+        A closed loop of bonded atoms — a hexagonal molecular ring with arrow-tipped bonds — signifying <em>plastics (polymer = repeating units)</em> + <em>recycling (closed loop)</em> in a single mark. Most abstract; most clearly "chemistry".
+      </p>
+      <div class="demos">
+        <div class="demo-card">
+          <svg class="demo-large" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="polyBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#0d9488"/>
+              </linearGradient>
+            </defs>
+            <rect x="4" y="4" width="72" height="72" rx="16" fill="url(#polyBg)"/>
+            <!-- Hexagonal ring of bonds -->
+            <g stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none">
+              <line x1="40" y1="18" x2="56" y2="28"/>
+              <line x1="56" y1="28" x2="56" y2="50"/>
+              <line x1="56" y1="50" x2="40" y2="62"/>
+              <line x1="40" y1="62" x2="24" y2="50"/>
+              <line x1="24" y1="50" x2="24" y2="28"/>
+              <line x1="24" y1="28" x2="40" y2="18"/>
+            </g>
+            <!-- Atoms at vertices -->
+            <g fill="white">
+              <circle cx="40" cy="18" r="5.5"/>
+              <circle cx="56" cy="28" r="5.5"/>
+              <circle cx="56" cy="50" r="5.5"/>
+              <circle cx="40" cy="62" r="5.5"/>
+              <circle cx="24" cy="50" r="5.5"/>
+              <circle cx="24" cy="28" r="5.5"/>
+            </g>
+            <!-- Three arrow tips on alternating vertices to suggest cyclic motion -->
+            <g stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" fill="none">
+              <path d="M 53 24 L 56 28 L 53 32"/>
+              <path d="M 27 32 L 24 28 L 27 24"/>
+              <path d="M 37 64 L 40 62 L 43 64"/>
+            </g>
+          </svg>
+          <div class="label">Showcase 96px</div>
+        </div>
+        <div class="nav-mock">
+          <div class="icon-box">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none">
+                <line x1="40" y1="18" x2="56" y2="28"/>
+                <line x1="56" y1="28" x2="56" y2="50"/>
+                <line x1="56" y1="50" x2="40" y2="62"/>
+                <line x1="40" y1="62" x2="24" y2="50"/>
+                <line x1="24" y1="50" x2="24" y2="28"/>
+                <line x1="24" y1="28" x2="40" y2="18"/>
+              </g>
+              <g fill="white">
+                <circle cx="40" cy="18" r="5.5"/>
+                <circle cx="56" cy="28" r="5.5"/>
+                <circle cx="56" cy="50" r="5.5"/>
+                <circle cx="40" cy="62" r="5.5"/>
+                <circle cx="24" cy="50" r="5.5"/>
+                <circle cx="24" cy="28" r="5.5"/>
+              </g>
+            </svg>
+          </div>
+          <div class="name">Shloak Chemicals<span>India Pvt. Ltd.</span></div>
+          <div class="nav-mock-fade"><span>About</span><span>Services</span><span>Products</span><span>Contact</span></div>
+        </div>
+        <div class="favicon-mock">
+          <div class="tab">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="72" height="72" rx="16" fill="#16a34a"/>
+              <g stroke="white" stroke-width="4" stroke-linecap="round" fill="none">
+                <line x1="40" y1="18" x2="56" y2="28"/>
+                <line x1="56" y1="28" x2="56" y2="50"/>
+                <line x1="56" y1="50" x2="40" y2="62"/>
+                <line x1="40" y1="62" x2="24" y2="50"/>
+                <line x1="24" y1="50" x2="24" y2="28"/>
+                <line x1="24" y1="28" x2="40" y2="18"/>
+              </g>
+              <g fill="white">
+                <circle cx="40" cy="18" r="6"/>
+                <circle cx="56" cy="28" r="6"/>
+                <circle cx="56" cy="50" r="6"/>
+                <circle cx="40" cy="62" r="6"/>
+                <circle cx="24" cy="50" r="6"/>
+                <circle cx="24" cy="28" r="6"/>
+              </g>
+            </svg>
+            <span>Shloak</span>
+          </div>
+          <div class="label" style="font-size:0.55rem;">Favicon</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pick">💡 Pick the option (A, B, or C) you want as the new logo. Tell me and I'll wire it into the live site and remove this preview page.</div>
+  </div>
+</body>
+</html>
